@@ -1,6 +1,15 @@
 import streamlit as st
 from PIL import Image
 
+# # Access secrets
+# github_username = st.secrets["general"]["github_username"]
+# email = st.secrets["general"]["email"]
+
+# # Now you can use this info wherever necessary
+# st.title(f"Welcome {github_username}!")
+# st.write(f"Contact us: {email}")
+
+
 # Set page config
 st.set_page_config(
     page_title="Beast Entertainment - Survival Challenge",
@@ -8,6 +17,12 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+# Hide Streamlit branding in footer
+st.markdown("""
+    <style>
+        footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 # Colors and styling
 st.markdown("""
