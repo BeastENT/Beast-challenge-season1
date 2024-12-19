@@ -44,7 +44,7 @@ page = st.sidebar.radio("Select Page", ["Home", "Gallery"])
 
 if page == "Home":
     # Header section
-    st.image("logo.jpeg", width=150)  # Replace with your logo if available
+    st.image("APP/logo.jpeg", width=150)  # Replace with your logo if available
     st.title("Beast Entertainment - Survival Challenge")
     st.subheader("Are You Ready to Win $1 Million?")
 
@@ -68,7 +68,7 @@ if page == "Home":
 
     # Flyer section
     st.header("Event Flyer")
-    flyer = Image.open("flyer.jpg")  # Replace with your flyer image file
+    flyer = Image.open("APP/flyer.jpg")  # Replace with your flyer image file
     st.image(flyer, caption="Scan the QR Code to Apply!", use_container_width=True)
 
     # Apply Now and Activities Section
@@ -106,7 +106,7 @@ elif page == "Gallery":
     st.markdown("### Sneak Peek Into the Event")
 
     # List of image files to display in the gallery
-    image_files = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"]  # Replace with your image filenames
+    image_files = ["APP/image1.jpg", "APP/image2.jpg", "APP/image3.jpg", "APP/image4.jpg"]  # Replace with your image filenames
 
     # Loop through the images and display them in separate rows with natural size
     for image_file in image_files:
